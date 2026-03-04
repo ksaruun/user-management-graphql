@@ -32,4 +32,11 @@ public class UserRestController {
         );
         return ResponseEntity.ok(user);
     }
+
+    @DeleteMapping
+    @RequestMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        userService.deleteUser(id);
+        return ResponseEntity.noContent().build();
+    }
 }

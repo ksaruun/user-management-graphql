@@ -13,7 +13,7 @@ public class User {
     private Long id;
     private String username;
     private String email;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     @JoinColumn(name = "profile_id", referencedColumnName = "id")
     @JsonManagedReference
     private Profile profile;

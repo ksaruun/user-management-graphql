@@ -1,9 +1,7 @@
-package main.java.com.example.controller;
+package com.example.controller;
 
-import main.java.com.example.model.Profile;
-import main.java.com.example.model.ProfileInput;
-import main.java.com.example.model.User;
-import main.java.com.example.service.UserService;
+import com.example.model.*;
+import com.example.service.UserService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;

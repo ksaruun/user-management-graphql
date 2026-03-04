@@ -1,10 +1,9 @@
-package main.java.com.example.service;
+package com.example.service;
 
+import com.example.model.*;
+import com.example.repository.UserRepository;
 import jakarta.transaction.Transactional;
-import main.java.com.example.model.Profile;
-import main.java.com.example.model.ProfileInput;
-import main.java.com.example.model.User;
-import main.java.com.example.repository.UserRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;

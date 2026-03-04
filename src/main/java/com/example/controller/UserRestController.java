@@ -1,8 +1,7 @@
-package main.java.com.example.controller;
+package com.example.controller;
 
-import main.java.com.example.model.User;
-import main.java.com.example.model.UserRequest;
-import main.java.com.example.service.UserService;
+import com.example.model.*;
+import com.example.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,9 +1,8 @@
-package main.java.com.example.model;
+package com.example.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
-import main.java.com.example.model.Profile;
 
 @Entity
 @Data

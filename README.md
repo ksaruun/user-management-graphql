@@ -57,8 +57,8 @@ UserSvcGraphQL/
 ### Installation & Run
 1. **Clone the repository**
    ```bash
-   git clone <repo-url>
-   cd UserSvcGraphQL
+   git clone [<repo-url>](https://github.com/ksaruun/user-management-graphql.git)
+   cd user-management-graphql
    ```
 2. **Build the project:**
    ```bash

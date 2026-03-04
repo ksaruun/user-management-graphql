@@ -26,7 +26,7 @@ def create_user_api(username: str, email: str, phone_number: str = None, address
 
 from langchain_groq import ChatGroq
 
-groq_api_key = "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"
+groq_api_key = "<groq_api_key>"
 llm = ChatGroq(api_key=groq_api_key, model="llama-3.1-8b-instant", temperature=0)
 # Bind the tool to the LLM
 tools = [create_user_api]

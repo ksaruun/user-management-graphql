@@ -1,0 +1,36 @@
+type User {
+    id: ID!
+    username: String!
+    email: String!
+    profile: Profile
+}
+
+type Profile {
+    id: ID!
+    phoneNumber: String
+    address: String
+}
+
+input ProfileInput {
+    phoneNumber: String
+    address: String
+}
+
+type Query {
+    getUser(id: ID!): User
+    getAllUsers: [User]
+}
+
+type Mutation {
+    createUser(username: String!, email: String!): User
+    updateUser(id: ID!, username: String, email: String): User
+    deleteUser(id: ID!): Boolean
+}
+
+extend type Mutation {
+    createUserWithProfile(
+        username: String!,
+        email: String!,
+        profile: ProfileInput
+    ): User
+}
